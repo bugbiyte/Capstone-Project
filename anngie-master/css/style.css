@@ -297,7 +297,7 @@ Responsive
   border-radius: 50%;
   margin-top: 99px;
 }
-
+}
 
 @media screen and (max-width:882px) {
   main{
@@ -310,7 +310,7 @@ Responsive
     border-radius: 50%;
     margin-top: 97px;
   }
-
+}
 @media screen and (max-width: 800px) {
   .hamburger {
     display: block;
@@ -339,11 +339,12 @@ nav li {
     font-size: 15px;
     padding: 25px;
   }
-
-  @media screen and (max-width:720px) {
+}
+@media screen and (max-width:720px) {
     main{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
+    }
     }
 
 
@@ -437,4 +438,6 @@ img {
 
 
 
+
+  
 
