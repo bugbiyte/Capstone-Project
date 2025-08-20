@@ -74,6 +74,25 @@ main{
     margin: 0 auto;
 }
 
+.mixes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 44px;
+  padding-top: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.mixes-grid .overlay-wrapper {
+  height: 300px;
+}
+
+.mixes-grid .overlay-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .leadtitles {
   line-height: 0;
   text-align: center;
