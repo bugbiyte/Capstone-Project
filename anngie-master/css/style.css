@@ -76,14 +76,16 @@ main{
 
 .mixes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 44px;
+  grid-row-gap: 44px;
   padding-top: 15px;
   max-width: 80%;
   margin: 0 auto;
 }
 
 .mixes-grid .overlay-wrapper {
+  width: 100%;
   height: 300px;
 }
 
@@ -292,6 +294,11 @@ Responsive
       grid-column-gap: 100px;
     }
 
+  .mixes-grid{
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 100px;
+  }
+
 .about-section img {
   max-width: 100%;
   border-radius: 50%;
@@ -301,6 +308,11 @@ Responsive
 
 @media screen and (max-width:882px) {
   main{
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 100px;
+  }
+
+  .mixes-grid{
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 100px;
   }
@@ -345,12 +357,20 @@ nav li {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
     }
+    .mixes-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
     }
+}
 
 
 
 @media screen and (max-width:630px) {
   main{
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mixes-grid{
       grid-template-columns: repeat(1, 1fr);
   }
 
@@ -423,18 +443,13 @@ img {
 }
 
 .mix {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.mix iframe {
-    width: 100%;
-    height: 166px;
-    border: none;
+.mix p {
+    margin-top: 8px;
 }
-.mix h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-} 
 
 
 
