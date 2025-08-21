@@ -95,13 +95,16 @@ main{
   border: none;
 }
 
-.more-mixes {
-  text-align: center;
-  margin-top: 40px;
+.more-mixes { 
+text-align: right;
+    /* margin: auto; */
+    margin-top: 40px;
+    margin-right: 149px;
+
 }
 
 .more-mixes a {
-  display: inline-block;
+  display: inline;
   padding: 10px 20px;
   background-color: teal;
   color: #fff;
@@ -239,7 +242,7 @@ Typography
 ------------------------------------------- */
 a {
   	text-decoration: none;
-    line-height: 90px;
+    /* line-height: 90px; */
   	font-weight: 900;
   	-webkit-transition: all .3s ease-in-out;
   	transition: all .3s ease-in-out;
