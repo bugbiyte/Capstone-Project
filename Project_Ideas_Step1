@@ -1,19 +1,13 @@
 Capstone: 
-1. Unknown Pleasures: A landing page with every micro-genre for electornic music. When the user hovers over it, it plays a sound. 
+1. Unknown Pleasures: A landing page with every micro-genre for electornic music. When the user hovers over it, it plays a soundbite of that genre. 
 2. Movie tracker: An app that tracks movies you would like to see/and have completed watching. 
 3. A music stumble upon discovery app
 
 ● Write a short blurb explaining each of your ideas.
-I have a music portfolio i've been working on and I'd like to add a section for 
+I have a website, which is music focused. I'd like to make a landing page called "Unknown Pleasures" which will display a galaxy-like tree of Electronic music's micro-genres. there will be a search bar to enter an artist and the API will pull information of that artist and provide the genre of music and description of that genre. 
 
 describe the problem and the data you'll be using to solve it. At this point,
 there's no need to talk about specific tools and technologies.
 
+The problem is there are so manny micro-genres out there and people don't know what that particular sound is or the definition of that sound. SO the application is a tool to quickly search for that micro-genre and have it pull an artist associated with it along with the defined genre. Heavily inspired by Last.fm, bandcamp, 
 
-● You can post your ideas, with a title, to your Slack community and solicit
-feedback from other students.
-
-
-● Submit your ideas to your mentor for review. Work with them to narrow in on
-the idea that you will move forward with. Please submit a link to your GitHub
-repository for your mentor to review.
