@@ -1,0 +1,33 @@
+/* page */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #fff; color: #222; }
+
+.top {
+  display: flex; gap: 12px; align-items: center;
+  padding: 10px 12px; border-bottom: 1px solid #eee;
+}
+.brand { font-weight: 700; }
+#filter { margin-left: auto; padding: 6px 8px; border: 1px solid #ddd; border-radius: 6px; }
+
+/* scatter area */
+.cloud {
+  position: relative; height: calc(100vh - 220px);
+  min-height: 420px; overflow: hidden;
+}
+
+/* clickable pink labels that look like text */
+.tag {
+  position: absolute; transform: translate(-50%, -50%);
+  background: none; border: none; padding: 0;
+  font-size: 14px; color: #d167ff; cursor: pointer;
+}
+.tag:hover, .tag:focus { text-decoration: underline; outline: none; }
+
+/* info panel */
+.panel {
+  padding: 14px 16px; border-top: 1px solid #eee;
+  background: #fafafa; display: grid; gap: 10px;
+}
+.track { display: grid; grid-template-columns: 84px 1fr; gap: 12px; align-items: center; }
+.track img { width: 84px; height: 84px; border-radius: 8px; background: #f0f0f0; object-fit: cover; }
+.status { color: #b85; background: #fff4d6; padding: 8px 10px; border-radius: 6px; }

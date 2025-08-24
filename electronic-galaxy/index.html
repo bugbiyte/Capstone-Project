@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Electronic Galaxy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>Electronic Galaxy</h1><p>Click a star to hear a preview + read a one-liner.</p></header>
+
+  <main class="layout">
+    <section id="galaxy" class="galaxy" aria-label="Genre map"></section>
+
+    <aside class="panel" aria-live="polite">
+      <h2 id="genreName">Pick a genre</h2>
+      <p id="genreSummary">You’ll see a short description here.</p>
+
+      <div class="track">
+        <img id="art" alt="" />
+        <div>
+          <div class="line"><span id="artist">—</span> • <span id="track">—</span></div>
+          <a id="itunesLink" href="#" target="_blank" rel="noopener">Open in Apple preview</a>
+        </div>
+      </div>
+
+      <audio id="player" controls preload="none"></audio>
+      <div id="status" class="status" hidden></div>
+    </aside>
+  </main>
+
+  <footer><small>Previews: iTunes Search • Summaries: Wikipedia</small></footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
