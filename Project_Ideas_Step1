@@ -1,13 +1,29 @@
 Capstone: 
-1. Unknown Pleasures: A landing page with every micro-genre for electornic music. When the user hovers over it, it plays a soundbite of that genre. 
+1. Unknown Pleasures: A landing page with a Mad Lib-esque One-liner. Once you land on the page, it will show you a sentence and you fill in a few blanks, and then get a bespoke playlist.
 2. Movie tracker: An app that tracks movies you would like to see/and have completed watching. 
 3. A music stumble upon discovery app
 
 ● Write a short blurb explaining each of your ideas.
-I have a website, which is music focused. I'd like to make a landing page called "Unknown Pleasures" which will display a galaxy-like tree of Electronic music's micro-genres. there will be a search bar to enter an artist and the API will pull information of that artist and provide the genre of music and description of that genre. 
+Concept: On load, users see a single sentence with blanks (dropdowns). As they choose words, the app translates those choices into a music query and instantly returns a curated “playlist” of tracks with 30-sec previews.
+Example prompt:
+“I’m feeling [mood] while [activity]—give me [intensity] [genre].”
 
-describe the problem and the data you'll be using to solve it. At this point,
-there's no need to talk about specific tools and technologies.
+Inputs (small, opinionated set):
+mood: happy / dark / calm / moody
 
-The problem is there are so manny micro-genres out there and people don't know what that particular sound is or the definition of that sound. SO the application is a tool to quickly search for that micro-genre and have it pull an artist associated with it along with the defined genre. Heavily inspired by Last.fm, bandcamp, 
+activity: studying / driving / gym / party
 
+intensity: chill / medium / banger
+
+genre: electronic / indie / pop / hip-hop / rock
+
+Output: A grid of tracks (artwork, title, artist) with audio previews and a “regenerate” button.
+
+MVP tech: Vite + React. Fetch songs via the iTunes Search API (no auth) and assemble a “playlist” client-side.
+Stretch goals: Spotify Recommendations (with tiny backend), shareable URLs, “Save preset,” subtle animations, toggle between sources.
+Vibe: Minimal, dark theme (nod to Joy Division), focus on the sentence as the central interaction.
+
+
+
+Describe the problem and the data you'll be using to solve it. 
+This will be more of a curated playlist 
