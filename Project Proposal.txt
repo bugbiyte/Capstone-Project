@@ -1,0 +1,64 @@
+Project Proposal: Movie tracker: A Web App that tracks movies you would like to see/and have completed watching. 
+1. What tech stack will you use for your final project?
+
+Frontend 
+<!-- React Native: For developing a cross-platform mobile application that runs on
+iOS and Android using a single codebase. -->
+
+React: For building the web application, ensuring a consistent and interactive
+user experience across platforms.
+
+Backend:
+I'm not sure. I'll be integrating API requests. 
+
+○ Database:
+Not sure 
+○ Content Management:
+Not sure 
+○ Hosting:
+not sure 
+
+
+Project Type
+Website: A web application accessible through modern browsers.
+
+Project Goal
+The goal is to produce a movie tracker which will allow invite-only users to contribute movies to watch and track. I'm thinking the movie tracker will have a landing page which will be somewhat mad-lib esque asking the user what kind of mood they are in and what genre they are interested in if they are alone or with someone else. 
+
+User Demographic
+The primary users of the app will be:
+
+All Ages. Movie junkies of horror, independent films, documentaries, comedy, action, thriller, drama and steamy romance. 
+
+Data and API
+
+Data: The content will include movie titles and possibly a link to a review on metacritic.
+
+
+Data Collection: Content will be managed using ????? and delivered via an API to a website.
+API: The API will provide endpoints for retrieving content, including articles, tips, and
+
+Project Approach
+1. Database Schema
+Content: Stores movie titles, score/rating, and a resource with fields such as
+categories
+
+
+2. Functionality
+○
+Content Display: Users can view movie titles, and multimedia
+resources.
+○
+Search and Filter: Users can search for and filter content based on categories
+and keywords.
+3. User Flow
+
+Homepage: Displays a landing page with the madlib esque sentence. The page will only recommend 3 titles per day. If you choose none, you can get access to a full list of movies from a seperate page. 
+
+Content Pages: If you choose none, you can get access to a full list of movies from a seperate page. 
+Search/Filter: Users can search for specific movies and filter content by
+category.
+
+4. Stretch Goals
+
+Multi-language Support
