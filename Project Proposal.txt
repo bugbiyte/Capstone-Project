@@ -1,14 +1,14 @@
-Project Proposal: Movie tracker: A Web App that tracks movies you would like to see/and have completed watching. 
-1. What tech stack will you use for your final project?
+Project Proposal: A movie Web app which will act as a Mad-Lib recommender that suggests a film from a curated list of movies 
 
+1. What tech stack will you use for your final project?
 Frontend
 React + Vite (fast dev server & build)
 
 
-Backend:I'm not sure. but found Supabase (managed backend: Postgres DB + Auth + file storage; no custom server needed for MVP
+Backend:
 
 ○ Database: Not sure but found on the web PostgreSQL (Supabase)
-○ Content Management:Not sure althought found on the web --  (Stretch) simple in-app admin page to add/edit movies
+○ Content Management: Not sure although found (Stretch) simple in-app admin page t
 ○ Hosting: not sure but found on the web Vercel for the React app
 
 
@@ -17,13 +17,10 @@ Website / Web App (responsive, accessible on modern browsers)
 
 
 Project Goal
-Invite-only movie tracker where users can:
-add titles to a shared list,
-mark to-watch / watched,
-give a quick thumbs up/down,
-capture mood, who recommended it, and who you’re with,
-get 3 daily recommendations from a mad-libs-style landing page (mood + genre + alone/with someone).
-
+Movie tracker where users can:
+-Discover one new title based off a Mad-Lib recommender that suggests a film from a curated list of movies 
+FUN xample: 
+“It’s [weather] and I’m dressed like [mood/aesthetic]. Serve a [genre] that feels [adjective] and tastes like [flavor/metaphor]. Keep it under [runtime] minutes and make sure it pairs with [snack/drink].”
 
 
 User Demographic
@@ -32,39 +29,34 @@ All Ages. Movie junkies of horror, independent films, documentaries, comedy, act
 
 
 Data and API's
-
 External Data-
--TMDb API for search, details, posters, genres.
--OMDb API to fetch Metacritic (Metascore) and other ratings using the movie’s imdbID (TMDb provides an IMDB external ID).
+ TMDb API for search, details, posters, genres.
+
 
 Internal Data
--User accounts, watchlists, thumbs up/down, mood, “recommended by,” daily picks—stored in Supabase Postgres
-
+-User accounts
 
 Data Collection: 
-Users submit a title via a form → app looks it up on TMDb → stores the canonical record (including tmdb_id, imdb_id) in Postgres.
-When a movie detail page is viewed (or on add), the app calls OMDb with imdb_id to fetch and cache Metascore into the movies table.
-
-For MVP, use Supabase client directly from the frontend (auth + row-level security).
-(Stretch) Add Supabase Edge Functions for server-side tasks like scheduled daily picks or rating backfills.
-
+(different tables)
+-Movies (canonical facts): title, year, runtime, poster, external IDs (IMDb/OMDb), genres (from your four), optional moods.
+-Mad-Lib Prompts (sessions): place, adjective, thing, vibe, drink, chosen suggestion, time.
+-Controlled lists: genres (only: body horror, steamy romance, documentary, crass comedy), moods (optional: spooky, romantic, warm, dark, brainy, etc.
 
 
 
 Project Approach
 1. Database Schema
-Content: Stores movie titles, score/rating, and a resource with fields such as
-categories
-
+design of the whole database. what tables i create. 
 
 2. Functionality
-○
-Content Display: Users can view movie titles, and multimedia
-resources.
-○
+
+landing page with button at the bottom "try again"
+
 Search and Filter: Users can search for and filter content based on categories
 and keywords.
+
 3. User Flow
+WIP
 
 Homepage: Displays a landing page with the madlib esque sentence. The page will only recommend 3 titles per day. If you choose none, you can get access to a full list of movies from a seperate page. 
 
@@ -73,5 +65,4 @@ Search/Filter: Users can search for specific movies and filter content by
 category.
 
 4. Stretch Goals
-
 Multi-language Support
