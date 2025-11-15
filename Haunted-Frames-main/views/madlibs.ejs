@@ -1,0 +1,89 @@
+<%- include('partials/header'); -%>
+
+<header>
+    <h3>Pick a card, any card. Choose wisely.</h3>
+    </header>
+
+<ul class="recipes">
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Bloody Sad"
+    data-description="Swap this copy with content from your own database or an external API call. Right now it's just a placeholder description to prove the modal works."
+  >
+    <img src="/bloodysad.png" alt="movie icon">
+    <h4>Bloody Sad</h4>
+    <p>For nights when you crave heartbreak in slow motion — stories soaked in tragic beauty. </p>
+  </li>
+
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Freaky but Chic"
+    data-description="Imagine this being filled with data from TMDB or your Mongo collection. Use it to show a stylish synopsis, cast info, or any call-to-action you want."
+  >
+    <img src="/freaky.png" alt="movie icon">
+    <h4>Freaky but Chic</h4>
+    <p>Killer looks. Killer vibes. Killer everything.</p>
+  </li>
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Twisted and Unholy"
+    data-description="Dummy text alert! Replace me with the payload from the scary source of your choice when you're ready."
+  >
+    <img src="/unholy.png" alt="movie icon">
+    <h4>Twisted and Unholy</h4>
+    <p>For nights when reality melts, and the monsters are beautifully wrong.</p>
+  </li>
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Strange and Possessed"
+    data-description="This is placeholder lore to help you test the interaction. Hook it up to live data whenever you're ready."
+  >
+    <img src="/possessed.png" alt="movie icon">
+    <h4>Strange and Possessed</h4>
+    <p>The weird has teeth — and it’s whispering your name.</p>
+  </li>
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Bloody Humour"
+    data-description="A lightweight gag reel of fake data. Perfect for confirming the UI flow before you wire up the real jokes."
+  >
+    <img src="/humor.png" alt="movie icon">
+    <h4>Bloody humour</h4>
+    <p>Because sometimes the only way to survive the horror is to laugh through the blood.</p>
+  </li>
+  <li
+    class="recipe"
+    role="button"
+    tabindex="0"
+    data-title="Sick and Surreal"
+    data-description="Pretend this paragraph was fetched from your Atlas cluster or TMDB response. Keep the structure and replace the message later."
+  >
+    <img src="/Sick.png" alt="movie icon">
+    <h4>Sick and Surreal</h4>
+    <p>When the dream won’t end and the film won’t blink — horror that hums in your bones.</p>
+  </li>
+</ul>
+
+<div id="card-modal" class="card-modal hidden" role="dialog" aria-modal="true" aria-labelledby="card-modal-title" aria-hidden="true">
+  <div class="card-modal__content">
+    <button type="button" class="card-modal__close" aria-label="Close popup">&times;</button>
+    <h2 id="card-modal-title">Madlib Title</h2>
+    <p id="card-modal-description">This is placeholder copy. Click any card to see its dummy content.</p>
+    <p class="card-modal__hint">When you are ready, replace this with data from your own database or an external API call.</p>
+  </div>
+</div>
+
+<script src="/madlibs.js" defer></script>
+
+<%- include('partials/footer'); -%>
+
